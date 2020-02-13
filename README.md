@@ -2,5 +2,16 @@
 
 Using ctypes, provides two examples of interop between Python and C.
 
-- hello.c and compile_hello.sh - uses gcc (c only)
-- inner.c and outer.py - uses g++ (and uses extern to force func to be available under same name)
+# Hello example
+
+Uses gcc (c only). Run by:
+
+    sh compile_hello.sh
+    python hello.py
+
+# Outer/inner example
+
+Uses g++ (and uses extern to force func to be available under same name). Run by:
+
+    sh compile_inner.sh
+    python outer.py
