@@ -1,4 +1,2 @@
-# gcc -o inner.so -shared -fPIC inner.c
-
-# NEED to make it work with g++:
+# This one use C++:
 g++ -o inner.so -shared -fPIC inner.c

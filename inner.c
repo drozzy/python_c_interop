@@ -3,9 +3,13 @@
 
 #include <stdio.h>  
 #include<math.h>
+
+// Nasty business needed to make this function be visible under the SAME
+// name in python, otherwise c++ will mangle it. 
 extern "C" {
-void do_inner_stuff(int i);
+   void do_inner_stuff(int i);
 }
+
 int state = 0;
 
 void do_inner_stuff(int i){
